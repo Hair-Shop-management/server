@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    types: [ opened, synchronize, reopened ]
   workflow_dispatch: # (2) 수동 실행
 
 jobs:
